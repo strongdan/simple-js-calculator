@@ -15,9 +15,7 @@ $(document).ready(function(){
             answer = multiplyNumbers(num1, num2);
         } else if (operation === 'divide') {
             answer = divideNumbers(num1, num2);  
-        } else {
-            answer = NaN;
-        }
+        } 
         
         $('#answer').html('<h3>' + answer + '</h3>'); 
         
