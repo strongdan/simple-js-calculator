@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("select.operation").change(function(){
+    
         var operation = $( "#myselect option:selected" ).text();
         var num1 = $( "#num1" ).val();
         var num2 = $( "#num2").val();
@@ -38,5 +38,5 @@ function divideNumbers(num1, num2) {
     return num1 / num2;
 }
 
-    });
+
 });
