@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    
+    $("select.operation").change(function(){
         var operation = $( "#myselect option:selected" ).text();
         var num1 = $( "#num1" ).val();
         var num2 = $( "#num2").val();
@@ -15,7 +15,9 @@ $(document).ready(function(){
             answer = multiplyNumbers(num1, num2);
         } else if (operation === 'divide') {
             answer = divideNumbers(num1, num2);  
-        } 
+        } else {
+            answer = NaN;
+        }
         
         $('#answer').html('<h3>' + answer + '</h3>'); 
         
@@ -36,5 +38,5 @@ function divideNumbers(num1, num2) {
     return num1 / num2;
 }
 
-
+    });
 });
